@@ -14,7 +14,8 @@ int main()
 
     while (game.check_guesses_left() == true)
     {
-        cout << "testing" << endl;
+        game.ask_for_guess();
+        game.check_guess();
     }
 
     return 0;
