@@ -14,8 +14,12 @@ public:
         random_int = (rand() % max_random_int) + 1;
         return random_int;
     };
+
     void ask_for_guess()
     {
-        cout << 'guess a random number between 1 and ' << max_random_int << ": " << cin >> user_guess
+        cout << 'guess a random number between 1 and ' << max_random_int << ": ";
+        cin >> user_guess;
+        cout << user_guess << endl;
+        cout << endl;
     }
 };
