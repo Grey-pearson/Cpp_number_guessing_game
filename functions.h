@@ -9,10 +9,10 @@ public:
     int max_random_int;
     int random_int;
     int user_guess;
-    int generate_randon_int()
+    void generate_randon_int()
     {
         random_int = (rand() % max_random_int) + 1;
-        return random_int;
+        // return random_int;
     };
 
     void ask_for_guess()
