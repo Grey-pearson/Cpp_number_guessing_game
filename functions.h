@@ -45,8 +45,15 @@ public:
         }
     }
 
-    void no_guesses_left()
+    bool check_guesses_left()
     {
-        cout << "you have no guesses left! game over!" << endl;
+        if (guesses_left > 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 };
