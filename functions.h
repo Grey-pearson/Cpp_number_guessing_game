@@ -26,9 +26,9 @@ public:
 
     void check_guess()
     {
-        switch (user_guess - random_int)
+        if (user_guess == random_int)
         {
-            case 
-        };
+            cout << "correct guess!!! ive reset your guesses left and multiplied the max range by 10" << endl;
+        }
     }
 };
