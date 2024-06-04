@@ -30,6 +30,8 @@ public:
         {
             cout << "correct guess!!! ive reset your guesses left and multiplied the max range by 10" << endl;
             guesses_left = 10;
+            max_random_int *= 10;
+            generate_randon_int();
         }
         else if (user_guess > random_int)
         {
@@ -41,5 +43,10 @@ public:
             cout << "too low! you have " << guesses_left << " left";
             guesses_left -= 1;
         }
+    }
+
+    void no_guesses_left()
+    {
+        cout << "you have no guesses left! game over!" << endl;
     }
 };
