@@ -2,27 +2,20 @@
 #include <cstdlib>
 using namespace std;
 
-int create_random_num(int max)
+class Game
 {
-    int new_random = rand() % max + 1;
-    return new_random;
-}
-
-int check_guess(int guess, int random)
-{
-    if (guess == random)
+public:
+    int guesses_left = 10;
+    int max_random_int;
+    int random_int;
+    int user_guess;
+    int generate_randon_int()
     {
-        cout << "you guessed correcct!" << endl;
-        return 0;
-    }
-    else if (guess < random)
+        random_int = (rand() % max_random_int) + 1;
+        return random_int;
+    };
+    void ask_for_guess()
     {
-        cout << "you guessed too low" << endl;
-        return 1;
+        cout << 'guess a random number between 1 and ' << max_random_int << ": " << cin >> user_guess
     }
-    else
-    {
-        cout << "you guessed too hight" << endl;
-        return 2;
-    }
-}
+};
