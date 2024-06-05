@@ -12,6 +12,8 @@ int main()
     cout << "and you have to guess the right number in 10 guesses or less." << endl;
     cout << "Every time you get it right ill increase the high end of the range by x10" << endl;
 
+    game.generate_randon_int();
+
     while (game.check_guesses_left() == true)
     {
         game.ask_for_guess();
