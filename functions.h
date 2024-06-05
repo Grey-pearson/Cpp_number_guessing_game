@@ -20,7 +20,7 @@ public:
     {
         cout << 'guess a random number between 1 and ' << max_random_int << ": ";
         cin >> user_guess;
-        cout << "debug " << user_guess << endl;
+        // cout << "debug " << user_guess << endl;
         cout << endl;
     }
 
