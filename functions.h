@@ -6,7 +6,7 @@ class Game
 {
 public:
     int guesses_left = 10;
-    int max_random_int;
+    int max_random_int = 10;
     int random_int;
     int user_guess;
 
@@ -35,13 +35,13 @@ public:
         }
         else if (user_guess > random_int)
         {
-            cout << "too hight! you have " << guesses_left << " left";
             guesses_left -= 1;
+            cout << "too hight! you have " << guesses_left << " left";
         }
         else
         {
-            cout << "too low! you have " << guesses_left << " left";
             guesses_left -= 1;
+            cout << "too low! you have " << guesses_left << " left" << endl;
         }
     }
 
